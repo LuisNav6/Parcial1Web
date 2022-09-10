@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'BEBAS_NEUE';
+    src: url(../fonts/BEBAS_NEUE.woff2);
+}
+.primero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    font-family:'BEBAS_NEUE';
+}
+.saber{
+    font-weight: bold;
+}
+p{
+    display:inline;
+}
+.segundo{
+    display: flex;
+    background-color: #ffe6ef;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 45px;
+    margin-left: 90px;
+    margin-right: 65px;
+    font-family:'BEBAS_NEUE';
+}
+.tercero{
+    display: flex;
+    background-color: #ffb3cb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    margin-left: 85px;
+    margin-right: 60px;
+    font-family:'BEBAS_NEUE';
+}
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+table{
+    text-align: center;
+}
+.per:hover{
+    border:1px solid #db5cca;
+}
+.seg:hover{
+    border:1px solid #db5cca;
+}
+.ter:hover{
+    border:1px solid #db5cca;
+}
+.cuar:hover{
+    border:1px solid #db5cca;
+}
+.cuarto{
+    font-size:xx-small;
+    display: flex;
+    background-color: #eeecec;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-evenly;
+    padding-left: 80px;
+    padding-right: 215px;
+    font-family:'BEBAS_NEUE';
+}
+
+
+
+
