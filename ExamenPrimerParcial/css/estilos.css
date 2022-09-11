@@ -1,55 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0; padding: 0;}
 
-body {
+body{
     background-color: white;
     height: 100%;
 }
 
 @font-face {
     font-family: Victoria-Secret;
-    src: url('../media/fonts/Victoria-Secret-Fonts.ttf');
+    src: url('../media/fonts/Victoria-Secret-Fonts.ttf' );
 }
 
-h1 {
+h1{
     font-family: Victoria-Secret;
     text-align: center;
 }
 
-header {
+header{
     width: 100%;
     overflow: hidden;
-    margin-bottom: 20px;
-    background-color: rgba(241, 235, 235, 0.911);
+    margin-bottom: 0px;
+    background-color: rgba(241, 235, 235, 0.911);   
 }
 
-.wrapper {
+.wrapper{
     width: 90%;
     max-width: 1500px;
     margin: auto;
     overflow: hidden;
+    text-align: center;
+    
 }
 
-
-header .icons i {
+header .icons i{
     float: right;
     line-height: 100px;
     display: inline-block;
     padding: 20px 20px;
     line-height: normal;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease ;
+    -o-transition: all 500ms ease ;
     transition: all 500ms ease;
 }
 
-header nav {
+header nav{
     float: left;
     line-height: 50px;
 }
 
-header nav a {
+header nav a{
     display: inline-block;
     color: black;
     text-decoration: none;
@@ -60,11 +58,11 @@ header nav a {
     font-family: 'Cinzel', serif;
 }
 
-.bolded {
+.bolded{
     font-weight: bold;
 }
 
-header nav a::after {
+header nav a::after{
     display: block;
     content: "";
     margin: auto;
@@ -74,24 +72,20 @@ header nav a::after {
     transition: width 0.3s;
 }
 
-header nav a:hover::after {
-    width: 100%;
+header nav a:hover::after{
+    width: 100%;   
 }
 
-header .icons i:hover {
+header .icons i:hover{
     background: rgb(158, 158, 158);
-    border-radius: 50px;
+    border-radius: 0%;
 }
 
-.logo {
-    display: inline;
-}
-
-i {
+i{
     color: black;
 }
 
-body .menu {
+body .menu{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -99,178 +93,16 @@ body .menu {
     line-height: 100px;
 }
 
-body .menu a {
+body .menu a{
     display: inline-block;
     color: black;
     text-decoration: none;
     padding: 50px 20px;
     line-height: normal;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     font-family: 'Cinzel', serif;
 }
-
-.main-title {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-}
-
-.search {
-    display: flex;
-    float: right;
-    padding: 1px 250px;
-}
-
-.search input {
-    width: 240px;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 15px;
-    color: black;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 30px;
-}
-
-.btn {
-    top: 0;
-    right: 0;
-    background: silver;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-}
-
-/* Propiedades Slider */
-
-body {
-    font-family: Verdana, sans-serif;
-}
-
-.mySlides {
-    display: none;
-}
-
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    align-content: center;
-    margin: auto;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 90%;
-    background: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    padding: 10px 40px;
-}
-
-.container .swiper-container {
-    width: 80%;
-    height: 100%;
-}
-
-.container .swiper-slide {
-    position: relative;
-    text-align: left;
-    font-size: 14px;
-    background: #fff;
-    text-align: start;
-    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
-}
-
-.container .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.container .swiper-slide .card-description {
-    padding: 1rem 1rem;
-}
-
-.container .swiper-slide .card-title,
-.container .swiper-slide .card-text {
-    margin-bottom: .5rem;
-}
-
-.container .swiper-slide .card-link {
-    text-align: center;
-}
-
-.container .swiper-slide .card-link a {
-    display: flex;
-    justify-content: center;
-    border-radius: 2em;
-    background-color: pink;
-
+a{
     text-decoration: none;
-
-    color: black;
-}
-
-.swiper-button-next {
-    right: 26px !important;
-}
-
-.swiper-button-prev {
-    left: 26px !important;
 }

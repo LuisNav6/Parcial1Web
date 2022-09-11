@@ -1,266 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/850ac5ea56.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-    <!-- JavaScript-->
-    <script defer src="js/estilos.js"></script>
     <title>Examen Primer Parcial</title>
 </head>
-
 <body>
     <header>
         <div class="wrapper">
             <div class="icons">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <i class="fa-solid fa-question"></i>
-                <i class="fa-regular fa-user fa-1.5x"></i>
+                
+              <a href="https://www.victoriassecretbeauty.mx/checkout/#/cart" target="_blank">             
+                 <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+              <a href="https://www.victoriassecretbeauty.mx/contactanos" target="_blank">
+                 <i class="fa-solid fa-question"></i>
+              </a>
+              <a href="https://www.victoriassecretbeauty.mx/login" target="_blank">
+                 <i class="fa-regular fa-user fa-1.5x"></i>
+               </a>
             </div>
             <nav>
-                <a href="#"> <span class="bolded">Beauty</span></a>
-                <a href="#">Victoria Secret</a>
-                <a href="#">PINK</a>
+                <a href="https://www.victoriassecretbeauty.mx" target="_blank"><span class="bolded">Beauty</span></a>
+                <a href="https://www.victoriassecretbeauty.mx/landing-vs" target="_blank">Victoria Secret</a>
+                <a href="https://www.victoriassecretbeauty.mx/landing-pink" target="_blank">PINK</a>
             </nav>
         </div>
     </header>
-    <section class="main-title">
-        <div>
-            <div class="logo">
-                <img src="images/Victorias-Secret-Logo2.png" width="15%" height="50%">
-            </div>
-            <div class="search">
-                <input type="text" placeholder="search" required>
-                <div class="btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <table style="width: 1230px; height: 110px;">
+        <tr>
+          <td>
+            <pre style="display: inline;">                                                          </pre>
+              <img src="images/Victorias-Secret-Logo2.png" style="width: 25%; height: 50%;"> 
+              <pre style="display: inline;">            </pre>
+              <input type="text" placeholder="Buscar" style="width: 180px;
+               height: 40px;
+               padding: 0 20px;
+               font-size: 15px;
+                color: black;
+                outline: none;
+                border: 1px solid silver;
+                border-radius: 0%;" required>
+              <i class="fa-solid fa-magnifying-glass" style=" top: 0;
+              right: 0;
+              background: silver;
+              text-align: center;
+              color: white;
+              font-size: 20px;
+              border-radius: 0%;
+              cursor: pointer;
+              width: 40px;
+              height: 42px;
+              line-height: 40px; "></i>
+        </td>
+        </tr>
+    </table>
     <section>
         <div class="menu wrapper">
-            <a href="#">Perfumes</a>
-            <a href="#">Cuidado Corporal</a>
-            <a href="#">Pijamas</a>
-            <a href="#">Panties</a>
-            <a href="#">Bolsos y Accesorios</a>
-            <a href="#">Lips</a>
-            <a href="#">Pink Beauty</a>
-            <a href="#">Regalos</a>
-            <a href="#">VSnow</a>
+            <a href="https://www.victoriassecretbeauty.mx/fragancias/colecciones" target="_blank">Perfumes</a>
+            <a href="https://www.victoriassecretbeauty.mx/cuidado-corporal?O=OrderByReleaseDateDESC" target="_blank">Cuidado Corporal</a>
+            <a href="https://www.victoriassecretbeauty.mx/pijamas" target="_blank">Pijamas</a>
+            <a href="https://www.victoriassecretbeauty.mx/panty?O=OrderByReleaseDateDESC" target="_blank">Panties</a>
+            <a href="https://www.victoriassecretbeauty.mx/accesorios" target="_blank">Bolsos y Accesorios</a>
+            <a href="https://www.victoriassecretbeauty.mx/lips" target="_blank">Lips</a>
+            <a href="https://www.victoriassecretbeauty.mx/pink-beauty?O=OrderByReleaseDateDESC" target="_blank">Pink Beauty</a>
+            <a href="https://www.victoriassecretbeauty.mx/regalos?O=OrderByReleaseDateDESC" target="_blank">Regalos</a>
+            <a href="https://www.victoriassecretbeauty.mx/vs-now" target="_blank">VSnow</a>
         </div>
     </section>
-
-    <section>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <img src="images/imagen3.webp " style="height:650px" style="width: 100%;">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="images/imagen2.webp" style="height:650px" style="width: 100%;">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="images/imagen1.webp" style="height:650px" style="width: 100%;">
-            </div>
-
-        </div>
-        <br>
-        <div style="text-align: center;">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-
-    </section>
-
-    <!-- Script Slider-->
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-
-    <section>
-        <div class="container">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-container mySwiper">
-
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="images/model1.webp" alt="">
-                        <div class="card-description">
-                            <div class="card-title">
-                                <h4>Victoria's Secret</h4>
-                            </div>
-                            <div class="card-text">
-                                <p>Panty Hiphugger Logo</p>
-                                <p>$349.00</p>
-                                <p>3 x $900</p>
-                            </div>
-                            <div class="card-link">
-                                <a href="#">Agregar</a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/model2.webp" alt="">
-                        <div class="card-description">
-                            <div class="card-title">
-                                <h4>Victoria's Secret</h4>
-                            </div>
-                            <div class="card-text">
-                                <p>Panty Hiphugger No Show</p>
-                                <p>$349.00</p>
-                                <p>3 x $900</p>
-                            </div>
-                            <div class="card-link">
-                                <a href="#">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/model3.webp" alt="">
-                        <div class="card-description">
-                            <div class="card-title">
-                                <h4>Victoria's Secret</h4>
-                            </div>
-                            <div class="card-text">
-                                <p>Panty Hiphugger No-show</p>
-                                <p>$349.00</p>
-                                <p>3 x $900</p>
-                            </div>
-                            <div class="card-link">
-                                <a href="#">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/model4.webp" alt="">
-                        <div class="card-description">
-                            <div class="card-title">
-                                <h4>Victoria's Secret</h4>
-                            </div>
-                            <div class="card-text">
-                                <p>Panty Tanga con Encaje</p>
-                                <p>$449.00</p>
-                                <p>3 x $900</p>
-                            </div>
-                            <div class="card-link">
-                                <a href="#">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/model5.webp" alt="">
-                        <div class="card-description">
-                            <div class="card-title">
-                                <h4>Victoria's Secret</h4>
-                            </div>
-                            <div class="card-text">
-                                <p>Panty Hiphugger con Logo en Cintura</p>
-                                <p>$349.00</p>
-                                <p>3 x $900</p>
-                            </div>
-                            <div class="card-link">
-                                <a href="#">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="images/model6.webp" alt="">
-                        <div class="card-description">
-                            <div class="card-title">
-                                <h4>Victoria's Secret</h4>
-                            </div>
-                            <div class="card-text">
-                                <p>Panty Hiphugger Show</p>
-                                <p>$349.00</p>
-                                <p>3 x $900</p>
-                            </div>
-                            <div class="card-link">
-                                <a href="#">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="images/model7.webp" alt="">
-                        <div class="card-description">
-                            <div class="card-title">
-                                <h4>Victoria's Secret</h4>
-                            </div>
-                            <div class="card-text">
-                                <p>Panty Hiphugger Show</p>
-                                <p>$349.00</p>
-                                <p>3 x $900</p>
-                            </div>
-                            <div class="card-link">
-                                <a href="#">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="images/model8.webp" alt="">
-                        <div class="card-description">
-                            <div class="card-title">
-                                <h4>Victoria's Secret</h4>
-                            </div>
-                            <div class="card-text">
-                                <p>Panty Hiphugger Tanga</p>
-                                <p>$349.00</p>
-                                <p>3 x $900</p>
-                            </div>
-                            <div class="card-link">
-                                <a href="#">Agregar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        </div>
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="estilos.js"></script>
-    </section>
-
 </body>
-
 </html>
