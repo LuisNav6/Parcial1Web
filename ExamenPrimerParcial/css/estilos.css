@@ -1,57 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
-
-*{margin: 0; padding: 0;}
-
-body{
+body {
     background-color: white;
     height: 100%;
 }
 
 @font-face {
     font-family: Victoria-Secret;
-    src: url('../media/fonts/Victoria-Secret-Fonts.ttf' );
+    src: url('../media/fonts/Victoria-Secret-Fonts.ttf');
 }
 
-h1{
+h1 {
     font-family: Victoria-Secret;
     text-align: center;
 }
 
-header{
+header {
     width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
-    background-color: rgba(241, 235, 235, 0.911);   
+    background-color: rgba(241, 235, 235, 0.911);
 }
 
-.wrapper{
+.wrapper {
     width: 90%;
     max-width: 1500px;
     margin: auto;
     overflow: hidden;
 }
 
-div{
 
-}
-
-header .icons i{
+header .icons i {
     float: right;
     line-height: 100px;
     display: inline-block;
     padding: 20px 20px;
     line-height: normal;
-    -webkit-transition: all 500ms ease ;
-    -o-transition: all 500ms ease ;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
 
-header nav{
+header nav {
     float: left;
     line-height: 50px;
 }
 
-header nav a{
+header nav a {
     display: inline-block;
     color: black;
     text-decoration: none;
@@ -62,11 +60,11 @@ header nav a{
     font-family: 'Cinzel', serif;
 }
 
-.bolded{
+.bolded {
     font-weight: bold;
 }
 
-header nav a::after{
+header nav a::after {
     display: block;
     content: "";
     margin: auto;
@@ -76,24 +74,24 @@ header nav a::after{
     transition: width 0.3s;
 }
 
-header nav a:hover::after{
-    width: 100%;   
+header nav a:hover::after {
+    width: 100%;
 }
 
-header .icons i:hover{
+header .icons i:hover {
     background: rgb(158, 158, 158);
     border-radius: 50px;
 }
 
-.logo{
+.logo {
     display: inline;
 }
 
-i{
+i {
     color: black;
 }
 
-body .menu{
+body .menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -101,7 +99,7 @@ body .menu{
     line-height: 100px;
 }
 
-body .menu a{
+body .menu a {
     display: inline-block;
     color: black;
     text-decoration: none;
@@ -112,20 +110,20 @@ body .menu a{
     font-family: 'Cinzel', serif;
 }
 
-.main-title{
+.main-title {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
 }
 
-.search{
+.search {
     display: flex;
     float: right;
     padding: 1px 250px;
 }
 
-.search input{
+.search input {
     width: 240px;
     height: 40px;
     padding: 0 20px;
@@ -136,7 +134,7 @@ body .menu a{
     border-radius: 30px;
 }
 
-.btn{
+.btn {
     top: 0;
     right: 0;
     background: silver;
@@ -152,9 +150,13 @@ body .menu a{
 
 /* Propiedades Slider */
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
 
 
 /* Slideshow container */
@@ -186,59 +188,89 @@ body {font-family: Verdana, sans-serif;}
 }
 
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-    .text{font-size: 11px}
+    .text {
+        font-size: 11px
+    }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Propiedades del carrusel */
-
-.carrousel{
+.container {
     width: 90%;
-    max-width: 120em;
-    padding: 2em;
-    
-}
-
-.carrousel .grande{
-    width: 200%;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    
-    padding: 2em;
-    transition: all .5s ease;
-    transform: translateX(-50%);
-}
-
-.carrousel .img{
-    width: calc(100% / 8 -2em);
-    min-height: 10vh;
-    
-}
-
-.carrousel .puntos{
-    width: 100%;
-    padding: .4em;
-    display: flex;
-    margin: 1em 0 0;
-    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    min-height: 60vh;
+    padding: 10px 40px;
 }
 
-.carrousel .punto{
-    width: 2em;
-    height: 2em;
-    margin: 1em 1em 0;
+.container .swiper-container {
+    width: 80%;
+    height: 100%;
 }
 
-.carrousel .punto.activo{
-    background-color: orange;
+.container .swiper-slide {
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    background: #fff;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+}
+
+.container .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.container .swiper-slide .card-description {
+    padding: 1rem 1rem;
+}
+
+.container .swiper-slide .card-title,
+.container .swiper-slide .card-text {
+    margin-bottom: .5rem;
+}
+
+.container .swiper-slide .card-link {
+    text-align: center;
+}
+
+.container .swiper-slide .card-link a {
+    display: flex;
+    justify-content: center;
+    border-radius: 2em;
+    background-color: pink;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.swiper-button-next {
+    right: 26px !important;
+}
+
+.swiper-button-prev {
+    left: 26px !important;
 }
