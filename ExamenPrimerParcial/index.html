@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/850ac5ea56.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- JavaScript-->
+    <script defer src=""></script>
+    <title>Examen Primer Parcial</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="icons">                
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-question"></i>
+                <i class="fa-regular fa-user fa-1.5x"></i>
+            </div>
+            <nav>
+                <a href="#"> <span class="bolded">Beauty</span></a>
+                <a href="#">Victoria Secret</a>
+                <a href="#">PINK</a>
+            </nav>
+        </div>
+    </header>
+    <section class="main-title">
+        <div>
+            <div class="logo">
+                <img src="images/Victorias-Secret-Logo2.png" width="15%" height="50%">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="search" required>
+                <div class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section>
+        <div class="menu wrapper">
+            <a href="#">Perfumes</a>
+            <a href="#">Cuidado Corporal</a>
+            <a href="#">Pijamas</a>
+            <a href="#">Panties</a>
+            <a href="#">Bolsos y Accesorios</a>
+            <a href="#">Lips</a>
+            <a href="#">Pink Beauty</a>
+            <a href="#">Regalos</a>
+            <a href="#">VSnow</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="images/imagen3.webp " style="height:650px" style="width: 100%;">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="images/imagen2.webp" style="height:650px" style="width: 100%;">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="images/imagen1.webp" style="height:650px" style="width: 100%;">
+              </div>
+    
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        
+    </section>
+
+    <!-- Script Slider-->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <section>
+        <div class="carrousel">
+            <div class="grande">
+                <img src="" alt="Imagen 1" class="img">
+                <img src="" alt="Imagen 2" class="img">
+                <img src="" alt="Imagen 3" class="img">
+                <img src="" alt="Imagen 4" class="img">
+                <img src="" alt="Imagen 5" class="img">
+                <img src="" alt="Imagen 6" class="img">
+                <img src="" alt="Imagen 7" class="img">
+                <img src="" alt="Imagen 8" class="img">
+            </div>
+
+            <ul class="puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>

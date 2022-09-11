@@ -1,0 +1,244 @@
+
+
+*{margin: 0; padding: 0;}
+
+body{
+    background-color: white;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Victoria-Secret;
+    src: url('../media/fonts/Victoria-Secret-Fonts.ttf' );
+}
+
+h1{
+    font-family: Victoria-Secret;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: rgba(241, 235, 235, 0.911);   
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+div{
+
+}
+
+header .icons i{
+    float: right;
+    line-height: 100px;
+    display: inline-block;
+    padding: 20px 20px;
+    line-height: normal;
+    -webkit-transition: all 500ms ease ;
+    -o-transition: all 500ms ease ;
+    transition: all 500ms ease;
+}
+
+header nav{
+    float: left;
+    line-height: 50px;
+}
+
+header nav a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px;
+    line-height: normal;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+.bolded{
+    font-weight: bold;
+}
+
+header nav a::after{
+    display: block;
+    content: "";
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: pink;
+    transition: width 0.3s;
+}
+
+header nav a:hover::after{
+    width: 100%;   
+}
+
+header .icons i:hover{
+    background: rgb(158, 158, 158);
+    border-radius: 50px;
+}
+
+.logo{
+    display: inline;
+}
+
+i{
+    color: black;
+}
+
+body .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+}
+
+body .menu a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 50px 20px;
+    line-height: normal;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+.main-title{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search{
+    display: flex;
+    float: right;
+    padding: 1px 250px;
+}
+
+.search input{
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+
+.btn{
+    top: 0;
+    right: 0;
+    background: silver;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+}
+
+/* Propiedades Slider */
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    align-content: center;
+    margin: auto;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text{font-size: 11px}
+}
+
+
+/* Propiedades del carrusel */
+
+.carrousel{
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    
+}
+
+.carrousel .grande{
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 2em;
+    transition: all .5s ease;
+    transform: translateX(-50%);
+}
+
+.carrousel .img{
+    width: calc(100% / 8 -2em);
+    min-height: 10vh;
+    
+}
+
+.carrousel .puntos{
+    width: 100%;
+    padding: .4em;
+    display: flex;
+    margin: 1em 0 0;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+}
+
+.carrousel .punto.activo{
+    background-color: orange;
+}
