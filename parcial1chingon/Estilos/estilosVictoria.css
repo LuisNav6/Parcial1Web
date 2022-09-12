@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-body {
-    background-color: white;
-    height: 100%;
-}
 
 @font-face {
     font-family: Victoria-Secret;
@@ -17,7 +13,10 @@ body {
     font-family: Pik;
     src: url("../media/fonts/pink.woff");
 }
-
+body {
+    background-color: white;
+    height: 100%;
+}
 .bea {
     font-family: Beauty;
     font-weight: bold;
@@ -283,4 +282,25 @@ h2{
     font-size: 20px;
     padding: 5px 5px;
     text-align: center;
+}
+.btn{
+    border: none;
+    background-color:rgba(241, 235, 235, 0.911);
+    width: 100px;
+    
+}
+.btn:hover{
+    background-color:#ffb3cb;
+}
+.btn2{
+    border: none;
+    background-color:rgba(241, 235, 235, 0.911);
+    width: 200px;
+    
+}
+.btn2:hover{
+    background-color:#ffb3cb;
+}
+pre{
+    font-family: Victoria-secret;
 }
