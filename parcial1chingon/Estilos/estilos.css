@@ -1,9 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+*{margin: 0; padding: 0;}
 
-body {
+body{
     background-color: white;
     height: 100%;
 }
@@ -16,55 +13,52 @@ body {
     font-family: Pik;
     src: url("../media/fonts/pink.woff");
 }
-
-.bea {
+.bea{
     font-family: Beauty;
     font-weight: bold;
 }
-
-.pik {
+.pik{
     font-family: Pik;
     font-weight: bold;
 }
-
-h1 {
+h1{
     font-family: Victoria-Secret;
     text-align: center;
 }
 
-header {
+header{
     width: 100%;
     overflow: hidden;
     margin-bottom: 0px;
-    background-color: rgba(241, 235, 235, 0.911);
+    background-color: rgba(241, 235, 235, 0.911);   
 }
 
-.wrapper {
+.wrapper{
     width: 90%;
     max-width: 1500px;
     margin: auto;
     overflow: hidden;
     text-align: center;
-
+    
 }
 
-header .icons i {
+header .icons i{
     float: right;
     line-height: 100px;
     display: inline-block;
     padding: 20px 20px;
     line-height: normal;
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease ;
+    -o-transition: all 500ms ease ;
     transition: all 500ms ease;
 }
 
-header nav {
+header nav{
     float: left;
     line-height: 50px;
 }
 
-header nav a {
+header nav a{
     display: inline-block;
     color: black;
     text-decoration: none;
@@ -75,11 +69,11 @@ header nav a {
     font-family: 'Cinzel', serif;
 }
 
-.bolded {
+.bolded{
     font-weight: bold;
 }
 
-header nav a::after {
+header nav a::after{
     display: block;
     content: "";
     margin: auto;
@@ -89,20 +83,20 @@ header nav a::after {
     transition: width 0.3s;
 }
 
-header nav a:hover::after {
-    width: 100%;
+header nav a:hover::after{
+    width: 100%;   
 }
 
-header .icons i:hover {
+header .icons i:hover{
     background: rgb(158, 158, 158);
     border-radius: 0%;
 }
 
-i {
+i{
     color: black;
 }
 
-body .menu {
+body .menu{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -110,7 +104,7 @@ body .menu {
     line-height: 100px;
 }
 
-body .menu a {
+body .menu a{
     display: inline-block;
     color: black;
     text-decoration: none;
@@ -120,8 +114,7 @@ body .menu a {
     font-weight: bold;
     font-family: 'Cinzel', serif;
 }
-
-a {
+a{
     text-decoration: none;
     color: black;
 }
@@ -144,7 +137,7 @@ body {
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin: auto;
+    margin:auto;
 }
 
 .dot {
@@ -262,25 +255,21 @@ body {
     font-family: 'BEBAS_NEUE';
     src: url("../media/fonts/BEBAS_NEUE.woff2");
 }
-
-.primero {
+.primero{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: stretch;
-    font-family: 'BEBAS_NEUE';
+    font-family:'BEBAS_NEUE';
 }
-
-.saber {
+.saber{
     font-weight: bold;
 }
-
-p {
-    display: inline;
+p{
+    display:inline;
 }
-
-.segundo {
+.segundo{
     display: flex;
     background-color: #ffe6ef;
     flex-direction: row;
@@ -289,66 +278,56 @@ p {
     height: 45px;
     margin-left: 90px;
     margin-right: 65px;
-    font-family: 'BEBAS_NEUE';
+    font-family:'BEBAS_NEUE';
 }
-
-.tercero {
+.tercero{
     display: flex;
     background-color: #ffb3cb;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: space-around;
+    align-content:space-around;
     margin-left: 85px;
     margin-right: 60px;
-    font-family: 'BEBAS_NEUE';
+    font-family:'BEBAS_NEUE';
 }
-
-body {
+body{
     margin-left: 100px;
     margin-right: 100px;
 }
-
-table {
+table{
     text-align: center;
 }
-
-.per:hover {
-    border: 1px solid #db5cca;
+.per:hover{
+    border:1px solid #db5cca;
 }
-
-.seg:hover {
-    border: 1px solid #db5cca;
+.seg:hover{
+    border:1px solid #db5cca;
 }
-
-.ter:hover {
-    border: 1px solid #db5cca;
+.ter:hover{
+    border:1px solid #db5cca;
 }
-
-.cuar:hover {
-    border: 1px solid #db5cca;
+.cuar:hover{
+    border:1px solid #db5cca;
 }
-
-.cuarto {
-    font-size: xx-small;
+.cuarto{
+    font-size:xx-small;
     display: flex;
     background-color: #eeecec;
     flex-direction: row;
-    align-items: baseline;
+    align-items:baseline;
     justify-content: space-evenly;
     padding-left: 80px;
     padding-right: 215px;
-    font-family: 'BEBAS_NEUE';
+    font-family:'BEBAS_NEUE';
 }
-
-#logo2:hover {
+#logo2:hover{
+background-color:#db5cca ;
+}
+#logo1:hover{
+    background-color:#db5cca ;
+}
+#ubi:hover{
     background-color: #db5cca;
 }
 
-#logo1:hover {
-    background-color: #db5cca;
-}
-
-#ubi:hover {
-    background-color: #db5cca;
-}

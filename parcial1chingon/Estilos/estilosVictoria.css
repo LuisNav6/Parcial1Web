@@ -13,12 +13,10 @@
     font-family: Pik;
     src: url("../media/fonts/pink.woff");
 }
-
 body {
     background-color: white;
     height: 100%;
 }
-
 .bea {
     font-family: Beauty;
     font-weight: bold;
@@ -27,6 +25,11 @@ body {
 .pik {
     font-family: Pik;
     font-weight: bold;
+}
+
+h1 {
+    font-family: Victoria-Secret;
+    text-align: center;
 }
 
 header {
@@ -142,18 +145,10 @@ a {
     align-content: center;
     margin: auto;
 }
-
-.imgObsessed1 img {
-    width: 100%;
-    transition: all 300ms;
-    position: relative;
+.main:hover .imgObsessed1{
+    -webkit-transform: scale(0.8); transform: scale(0.8);
 }
-
-.imgObsessed1 img:hover {
-    transform: scale(1.05);
-}
-
-.main {
+.main{
     overflow: hidden;
 }
 
@@ -163,57 +158,23 @@ a {
     justify-content: space-around;
     align-items: center;
 }
-
-.imgObsessed2:hover {
+.imgObsessed2:hover{
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
-
 @keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
-}
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 .imgObsessed3 {
     max-width: 100%;
@@ -221,17 +182,14 @@ a {
     justify-content: space-around;
     align-items: center;
 }
-
-.imgObsessed3:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.imgObsessed3:hover{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h3 .cursive {
+    background-color: pink;
+    border-radius: 1em;
 }
 
 .wr {
@@ -242,7 +200,7 @@ a {
     display: flex;
 }
 
-.wr label {
+.wr label{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -299,22 +257,21 @@ a {
     transform: scaleX(1);
 }
 
-.pink-border {
+.pink-border{
     border-radius: 2em;
     font-size: 2em;
     padding: 5px 0px;
     background-color: pink;
-    font-family: 'Cinzel', serif;
 }
 
-h3 {
+h3{
     text-align: center;
     font-size: 15;
     padding: 5px 5px;
     font-family: 'Cinzel', serif;
 }
 
-.content {
+.content{
     width: 100%;
     max-width: 1000px;
     margin: auto;
@@ -325,180 +282,53 @@ h3 {
     font-weight: normal;
 }
 
-.braVid {
+h2{
+    font-size: 1em;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.braVid{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 2em 2em;
 }
 
-.lower {}
+.lower{
+ 
+}
 
-#b {
+#b{
     font-size: 40px;
-    padding: 15px .8em;
+    padding: 10px .8em;
     text-align: center;
-    font-family: 'Cinzel', serif;
 }
 
-#x {
-    font-size: 15px;
-    padding: 10px 20px;
+#x{
+    font-size: 20px;
+    padding: 5px 5px;
     text-align: center;
-    font-family: 'Cinzel', serif;
 }
-
-.btn {
+.btn{
     border: none;
-    background-color: rgba(241, 235, 235, 0.911);
+    background-color:rgba(241, 235, 235, 0.911);
     width: 100px;
-
+    
 }
-
-.btn:hover {
-    background-color: #ffb3cb;
+.btn:hover{
+    background-color:#ffb3cb;
 }
-
-.btn2 {
+.btn2{
     border: none;
-    background-color: rgba(241, 235, 235, 0.911);
+    background-color:rgba(241, 235, 235, 0.911);
     width: 200px;
-
+    
+}
+.btn2:hover{
+    background-color:#ffb3cb;
+}
+pre{
+    font-family: Victoria-secret;
 }
 
-.btn2:hover {
-    background-color: #ffb3cb;
-}
-
-
-#iop2 {
-    text-align: center;
-    background-color: pink;
-    border-radius: .5em;
-    padding-inline-start: 1.5em 1.5em;
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-#iop {
-    text-align: center;
-    padding-inline-start: 1.5em 1.5em;
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-#quejas {
-    text-align: center;
-    padding: 2em 10em;
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.audioVic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em 1em;
-}
-
-#tt{
-    text-align: center;
-    padding-inline-start: 1.5em 1.5em;
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.btn-neon{
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    color: black;
-    letter-spacing: 4px;
-    font-size: 24px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-}
-
-.btnSus{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2.2em;
-}
-
-.btn-neon:hover{
-    background: pink;
-    box-shadow: 0 0 10px pink, 0 0 40px pink, 0 0 80px pink;
-    transition-delay: 1s;
-}
-
-.btn-neon span{
-    position: absolute;
-    display: block;
-}
-
-#span1{
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background-color: pink;
-}
-
-.btn-neon:hover #span1{
-    left: 100%;
-    transition: 1s;
-}
-
-#span3{
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background-color: pink;
-}
-
-.btn-neon:hover #span3{
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-#span2{
-    top:-100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background-color: pink;
-}
-
-.btn-neon:hover #span2{
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-
-#span4{
-    bottom:-100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background-color: pink;
-}
-
-.btn-neon:hover #span4{
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
-}
-
-.textbox{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
